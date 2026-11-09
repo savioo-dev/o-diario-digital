@@ -1,0 +1,141 @@
+/* ============================================
+   Teste 1: html com font-size: 24px
+   ============================================ */
+html {
+  font-size: 24px;
+}
+
+/* Reset básico para consistência entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f1ea;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* ============================================
+   Testes 2, 3, 4: .newspaper
+   ============================================ */
+.newspaper {
+  font-size: 16px;                                    /* Teste 3 */
+  font-family: 'Open Sans', sans-serif;               /* Teste 4 */
+  max-width: 720px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  border-top: 6px solid #1a1a1a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================================
+   Testes 17, 18, 19: .name
+   ============================================ */
+.name {
+  font-size: 2rem;                                    /* Teste 17 — 2 × 16px pai */
+  font-family: 'Times New Roman', serif;              /* Teste 18 */
+  text-transform: uppercase;                          /* Teste 19 */
+  text-align: center;
+  letter-spacing: 2px;
+  border-bottom: 3px double #1a1a1a;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+/* Data do artigo */
+.date {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+/* ============================================
+   Testes 21, 22: .headline
+   ============================================ */
+.headline {
+  font-size: 2em;                                     /* Teste 21 — 2 × 16px pai */
+  font-weight: bold;                                  /* Teste 22 */
+  text-align: center;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+/* ============================================
+   Testes 23, 24, 25: .sub-headline
+   ============================================ */
+.sub-headline {
+  font-weight: 100;                                   /* Teste 23 */
+  font-size: 1.5em;                                   /* Teste 24 — 1.5 × 16px pai */
+  font-style: italic;                                 /* Teste 25 */
+  text-align: center;
+  color: #444;
+  margin-bottom: 1.25rem;
+  line-height: 1.4;
+}
+
+/* ============================================
+   Testes 20, 26: .author
+   ============================================ */
+.author {
+  text-transform: uppercase;                          /* Teste 20 */
+  font-weight: bold;                                  /* Teste 26 */
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #ccc;
+}
+
+/* ============================================
+   Testes 27, 28: .text
+   ============================================ */
+.text {
+  text-indent: 20px;                                  /* Teste 27 */
+  line-height: 2em;                                   /* Teste 28 — 2 × 16px pai */
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* ============================================
+   Testes 29, 30: .text::first-letter
+   ============================================ */
+.text::first-letter {
+  font-weight: bold;                                  /* Teste 29 */
+  font-size: 2em;                                     /* Teste 30 — 2 × 16px pai */
+  color: #8b0000;
+  float: left;
+  line-height: 1;
+  margin-right: 2px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .newspaper {
+    padding: 1.5rem;
+  }
+
+  .headline {
+    font-size: 1.6em;
+  }
+
+  .sub-headline {
+    font-size: 1.15em;
+  }
+}
